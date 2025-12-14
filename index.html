@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Питайся как папа</title>
+  <link rel="icon" href="assets/1.5%20%D0%B8%20%D1%84%D1%83%D1%82%D0%B5%D1%80.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+
+<div class="notify" id="notify" aria-hidden="true">
+  <div class="notify__box">
+    <h3 class="notify__title">Заявка отправлена 🎉</h3>
+    <p class="notify__text">
+      Спасибо! Мы получили ваше сообщение и свяжемся с вами в ближайшее время.
+    </p>
+    <button class="btn notify__btn js-close-notify" type="button">
+      Понятно
+    </button>
+  </div>
+</div>
+
+
+
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="#top" aria-label="На главную">
+      <img class="brand__mark" src="assets/1.5%20%D0%B8%20%D1%84%D1%83%D1%82%D0%B5%D1%80.png" alt="Логотип" />
+      <span class="brand__text">Питайся<br><b>как папа</b></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a class="nav__link" href="#tips">Советы</a>
+      <a class="nav__link" href="#recipes">Рецепты</a>
+      <a class="nav__link" href="#approach">Индивидуальный подход</a>
+      <a class="nav__link" href="#templates">Шаблоны</a>
+      <a class="nav__link" href="#values">Ценности</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO (Экран 1) -->
+  <section class="hero">
+    <div class="hero__decor" aria-hidden="true">
+      <img class="decor decor--tomato" src="assets/1.2.png" alt="" />
+      <img class="decor decor--kiwi" src="assets/1.3.png" alt="" />
+      <img class="decor decor--pear" src="assets/1.1.png" alt="" />
+    </div>
+
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Сбалансированное<br>&amp; здоровое<br>
+          <span>Питание дома</span>
+        </h1>
+
+        <button class="btn btn--primary js-open-modal" type="button">Оформить подписку</button>
+      </div>
+
+      <div class="hero__media">
+        <div class="hero__plate parallax">
+          <img src="assets/1.4.png" alt="Блюдо" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Далее секции 2–10 (пока каркас; картинки подставлю после твоей загрузки) -->
+  <section class="nutrition section" id="nutrition">
+    <div class="container nutrition__grid">
+      <div class="nutrition__text">
+        <h2 class="h2">Что такое здоровое питание?</h2>
+
+        <!-- Карточки/теги будут добавлены после загрузки остальных элементов экрана 2 -->
+        <p class="muted">Сбалансированное питание — это сочетание белков, жиров, углеводов и витаминов в правильных пропорциях.</p>
+      </div>
+
+      <div class="nutrition__media">
+        <img class="nutrition__img" src="assets/2.1.png" alt="Тарелка с полезными продуктами">
+      </div>
+    </div>
+  </section>
+
+  <section class="subscribe section section--cta" id="subscribe">
+    <div class="container subscribe__grid">
+      <div class="subscribe__left">
+        <h2 class="subscribe__title">Скорее подпишись</h2>
+        <p class="subscribe__text">
+          Оформи подписку прямо сейчас и открой доступ к более чем 100 эксклюзивным рецептам, которые недоступны на бесплатном тарифе!
+        </p>
+        <p class="subscribe__text">
+          Открой для себя новые вкусы, кулинарные техники и вдохновение для каждого дня.
+        </p>
+        <button class="btn btn--light js-open-modal" type="button">Оформить подписку</button>
+      </div>
+
+      <div class="subscribe__right" aria-label="Галерея блюд">
+        <div class="mosaic">
+          <img class="mosaic__item a" src="assets/3.3.png" alt="">
+          <img class="mosaic__item b" src="assets/3.4.png" alt="">
+          <img class="mosaic__item c" src="assets/3.10.png" alt="">
+          <img class="mosaic__item d" src="assets/3.2.png" alt="">
+          <img class="mosaic__item e" src="assets/3.1.png" alt="">
+          <img class="mosaic__item f" src="assets/3.6.png" alt="">
+          <img class="mosaic__item g" src="assets/3.5.png" alt="">
+          <img class="mosaic__item h" src="assets/3.8.png" alt="">
+          <img class="mosaic__item i" src="assets/3.7.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tips section" id="tips">
+  <div class="container tips__grid">
+    <div class="tips__media">
+      <div class="tips__img tips__img--main">
+        <img src="assets/4.1.png" alt="Готовка дома">
+      </div>
+      <div class="tips__bottom">
+        <div class="tips__img tips__img--small">
+          <img src="assets/4.3.png" alt="Салат">
+        </div>
+        <div class="tips__img tips__img--small">
+          <img src="assets/4.2.png" alt="Готовые контейнеры еды">
+        </div>
+      </div>
+    </div>
+
+    <div class="tips__content">
+      <h2 class="tips__title">Простые советы<br>для старта</h2>
+
+      <div class="tips__text">
+        <p>
+          Начать путь к здоровому питанию можно с простых шагов. Постарайтесь заменить сладкие напитки простой водой
+          и добавлять в рацион больше овощей и фруктов. Кушайте медленнее и прислушивайтесь к чувству насыщения —
+          это помогает избежать переедания.
+        </p>
+        <p>
+          Планируйте приёмы пищи заранее, чтобы реже прибегать к фастфуду, старайтесь готовить дома — так вы точно
+          будете знать, что именно едите. Главное — двигаться постепенно и не стремиться к идеалу сразу.
+        </p>
+      </div>
+
+      <div class="tips__actions" role="group" aria-label="Советы">
+        <button class="tips__btn tips__btn--orange" type="button">Планируйте приёмы<br>пищи заранее</button>
+        <button class="tips__btn tips__btn--green" type="button">Пейте достаточно воды</button>
+
+        <button class="tips__btn tips__btn--green" type="button">Соблюдайте режим<br>питания</button>
+        <button class="tips__btn tips__btn--orange" type="button">Ограничьте<br>добавленный сахар</button>
+
+        <button class="tips__btn tips__btn--green tips__btn--wide" type="button">
+          Добавляйте овощи и фрукты в каждый приём пищи
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="section" id="recipes">
+  <div class="container">
+    <h2 class="h2">Вкусные и полезные рецепты<br>на каждый день</h2>
+
+    <div class="slider" aria-label="Слайдер рецептов">
+      <button class="slider__btn" id="prev" type="button" aria-label="Предыдущий слайд">‹</button>
+
+      <div class="slider__viewport">
+        <div class="slider__track" id="track">
+          <article class="slide slide--breakfast is-active" aria-label="Завтраки">
+            <h3 class="slide__title">Завтраки</h3>
+            <button class="slide__go" type="button" aria-label="Открыть раздел Завтраки">
+              <span aria-hidden="true">→</span>
+            </button>
+          </article>
+
+          <article class="slide slide--lunch" aria-label="Обеды">
+            <h3 class="slide__title">Обеды</h3>
+            <button class="slide__go" type="button" aria-label="Открыть раздел Обеды">
+              <span aria-hidden="true">→</span>
+            </button>
+          </article>
+
+          <article class="slide slide--dinner" aria-label="Ужины">
+            <h3 class="slide__title">Ужины</h3>
+            <button class="slide__go" type="button" aria-label="Открыть раздел Ужины">
+              <span aria-hidden="true">→</span>
+            </button>
+          </article>
+
+          <article class="slide slide--smoothie" aria-label="Смузи">
+            <h3 class="slide__title">Смузи</h3>
+            <button class="slide__go" type="button" aria-label="Открыть раздел Смузи">
+              <span aria-hidden="true">→</span>
+            </button>
+          </article>
+        </div>
+      </div>
+
+      <button class="slider__btn" id="next" type="button" aria-label="Следующий слайд">›</button>
+    </div>
+  </div>
+</section>
+
+  <section class="approach section" id="approach">
+    <div class="container">
+      <h2 class="h2">Индивидуальный подход:<br>Онлайн‑поддержка тренера</h2>
+
+      <div class="approach__grid">
+        <!-- 1) Слева сверху: Поддержка сообщества -->
+        <article class="approach__item approach__item--text" >
+          <h3 class="approach__h3">Поддержка сообщества единомышленников</h3>
+          <p class="approach__p">
+            Вы становитесь частью закрытого клуба, где каждый разделяет ваши цели.
+            Общайтесь, делитесь успехами, получайте советы и находите мотивацию.
+          </p>
+          <img class="approach__icon approach__icon--chat" src="assets/7.1.png" alt="" aria-hidden="true">
+        </article>
+
+        <!-- 2) По центру сверху: Экономия времени (тёмная карточка) -->
+        <article class="approach__item approach__item--card approach__item--dark" data-parallax="0.06">
+          <div class="approach__card">
+            <h3 class="approach__h3">Экономия времени</h3>
+            <p class="approach__p">
+              Программа и материалы структурированы так, чтобы вы получали максимум пользы
+              за малое время.
+            </p>
+            <img class="approach__icon approach__icon--clock" src="assets/7.2.png" alt="" aria-hidden="true">
+          </div>
+        </article>
+
+        <!-- 3) Справа сверху: Формирование привычек -->
+        <article class="approach__item approach__item--text" >
+          <h3 class="approach__h3">Формирование устойчивых здоровых привычек</h3>
+          <p class="approach__p">
+            Маленькие шаги ведут к большим изменениям. Открой для себя простые и
+            эффективные методы.
+          </p>
+          <img class="approach__icon approach__icon--check" src="assets/7.3.png" alt="" aria-hidden="true">
+        </article>
+
+        <!-- 4) Слева снизу: Доступ к базе знаний (тёмная карточка) -->
+        <article class="approach__item approach__item--card approach__item--dark" >
+          <div class="approach__card">
+            <h3 class="approach__h3">Доступ к базе знаний</h3>
+            <p class="approach__p">
+              Получите доступ к проверенной информации: статьям, видеороликам и
+              материалам от экспертов.
+            </p>
+            <img class="approach__icon approach__icon--book" src="assets/7.4.png" alt="" aria-hidden="true">
+          </div>
+        </article>
+
+        <!-- 5) По центру снизу: Самочувствие -->
+        <article class="approach__item approach__item--text" >
+          <h3 class="approach__h3">Улучшение общего самочувствия</h3>
+          <p class="approach__p">
+            Наша программа нацелена не только на внешние изменения, но и на полное
+            оздоровление организма.
+          </p>
+          <img class="approach__icon approach__icon--heart" src="assets/7.5.png" alt="" aria-hidden="true">
+        </article>
+
+        <!-- 6) Справа снизу: Платная подписка (оранжевая карточка) -->
+        <article class="approach__item approach__item--cta">
+          <div class="approach__cta">
+            <p class="approach__cta-text">Доступно с платной подпиской<br><b>«Оптимальный» и выше</b></p>
+            <button class="btn btn--dark js-open-modal" type="button">Оформить подписку</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="check section section--green" id="values">
+    <div class="container check__grid">
+      <div class="check__left">
+        <h2 class="check__title">Успей забрать чек‑лист</h2>
+        <p class="check__text">
+          Оставьте свой адрес электронной почты и начните получать полезные советы по правильному питанию прямо на почту — совершенно бесплатно!
+        </p>
+        <p class="check__text">
+          Вас ждут простые рекомендации, вкусные идеи и проверенные лайфхаки для здорового образа жизни.
+        </p>
+
+        <form class="check__form lead" action="#" method="post">
+          <label class="sr-only" for="email">Электронная почта</label>
+          <input class="lead__input" id="email" type="email" placeholder="Электронная почта" required>
+          <button class="lead__btn" type="submit" aria-label="Отправить email">→</button>
+        </form>
+      </div>
+
+      <div class="check__right" aria-hidden="true">
+        <img class="check__stickers parallax" src="assets/8a0e857a-e2aa-4d5d-bda4-17106b7fedd8.png" alt="">
+      </div>
+    </div>
+  </section>
+
+<section class="pricing" id="pricing">
+  <div class="container">
+    <h2 class="pricing__title">Тарифы</h2>
+
+    <div class="pricing__grid">
+      <article class="price-card price-card--light">
+        <h3 class="price-card__name">Базовый</h3>
+        <div class="price-card__price">1299Р</div>
+        <ul class="price-card__list">
+          <li>Персональное недельное меню</li>
+          <li>Списки покупок на каждый день</li>
+          <li>Поддержка по e-mail</li>
+          <li>Советы по замене продуктов</li>
+          <li class="is-muted">Доступ ко всем рецептам</li>
+          <li class="is-muted">2 онлайн-разбора питания в месяц</li>
+          <li class="is-muted">Индивидуальный план питания</li>
+          <li class="is-muted">Чек-лист для мотивации</li>
+          <li class="is-muted">Закрытые вебинары</li>
+        </ul>
+        <button class="btn js-open-modal" type="button">Оформить подписку</button>
+      </article>
+
+      <article class="price-card price-card--premium">
+        <div class="price-card__badge">-15%</div>
+        <h3 class="price-card__name">Премиум</h3>
+        <div class="price-card__price-wrap">
+          <div class="price-card__price">2449Р</div>
+          <div class="price-card__old">3449Р</div>
+        </div>
+        <ul class="price-card__list price-card__list--light">
+          <li>Персональное недельное меню</li>
+          <li>Списки покупок на каждый день</li>
+          <li>Поддержка по e-mail</li>
+          <li>Советы по замене продуктов</li>
+          <li>Доступ ко всем рецептам</li>
+          <li>2 онлайн-разбора питания в месяц</li>
+          <li>Индивидуальный план питания</li>
+          <li>Чек-лист для мотивации</li>
+          <li>Закрытые вебинары</li>
+        </ul>
+        <button class="btn btn--light js-open-modal" type="button">Оформить подписку</button>
+      </article>
+
+      <article class="price-card price-card--light">
+        <h3 class="price-card__name">Оптимальный</h3>
+        <div class="price-card__price">1999Р</div>
+        <ul class="price-card__list">
+          <li>Персональное недельное меню</li>
+          <li>Списки покупок на каждый день</li>
+          <li>Поддержка по e-mail</li>
+          <li>Советы по замене продуктов</li>
+          <li>Доступ ко всем рецептам</li>
+          <li>2 онлайн-разбора питания</li>
+          <li class="is-muted">Индивидуальный план питания</li>
+          <li class="is-muted">Чек-лист для мотивации</li>
+          <li class="is-muted">Закрытые вебинары</li>
+        </ul>
+        <button class="btn js-open-modal" type="button">Оформить подписку</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" id="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a class="footer__brand-link" href="#top" aria-label="На главную">
+        <img class="footer__leaf" src="assets/1.5%20%D0%B8%20%D1%84%D1%83%D1%82%D0%B5%D1%80.png" alt="" aria-hidden="true">
+        <span class="footer__logo-text">Здоровое<br><b>питание</b></span>
+      </a>
+
+      <div class="footer__social" aria-label="Социальные сети">
+        <!-- Telegram (SVG) -->
+        <a class="footer__soc" href="#" aria-label="Telegram">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M21.8 4.4L19.1 20.5c-.2 1.1-.8 1.4-1.6.9l-4.4-3.2-2.1 2c-.2.2-.4.4-.9.4l.3-4.6 8.4-7.6c.4-.3-.1-.5-.6-.2L8 14.3 3.7 13c-1-.3-1-1 .2-1.5L20.7 4c.8-.3 1.5.2 1.1 1.4Z" fill="currentColor"/>
+          </svg>
+        </a>
+
+        <a class="footer__soc" href="#" aria-label="WhatsApp"><img src="assets/9.1.png" alt=""></a>
+        <a class="footer__soc" href="#" aria-label="Instagram"><img src="assets/9.2.png" alt=""></a>
+        <a class="footer__soc" href="#" aria-label="TikTok"><img src="assets/9.3.png" alt=""></a>
+        <a class="footer__soc" href="#" aria-label="VK"><img src="assets/9.4.png" alt=""></a>
+      </div>
+
+      <div class="footer__copy">
+        <small>© 2024 — Tea room</small>
+        <a href="#" class="footer__policy">Privacy Policy</a>
+      </div>
+    </div>
+
+    <nav class="footer__nav" aria-label="Навигация">
+      <a href="#tips">Советы</a>
+      <a href="#recipes">Рецепты</a>
+      <a href="#approach">Индивидуальный подход</a>
+      <a href="#templates">Шаблоны</a>
+      <a href="#values">Ценности</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- Модальное окно (форма) -->
+<div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal__backdrop js-close-modal"></div>
+  <div class="modal__panel">
+    <button class="modal__close js-close-modal" type="button" aria-label="Закрыть">×</button>
+    <h3 id="modalTitle" class="modal__title">Оформление подписки</h3>
+
+    <form class="modal__form" id="subscribeForm">
+      <label class="field">
+        <span class="field__label">Имя</span>
+        <input class="field__input" name="name" type="text" required>
+      </label>
+
+      <label class="field">
+        <span class="field__label">Email</span>
+        <input class="field__input" name="email" type="email" required>
+      </label>
+
+      <button class="btn btn--primary" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
